@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>M.N.G</title>
+            <link rel="stylesheet" href="css.css">
+        </head>
+            <body>
+              <header>
+                <div class="btn btn-one">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" id="name" placeholder="Enter Username" name="uname" required>
+                
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" id="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="uname"><b>Email</b></label>
+                    <input type="text" id="Email" placeholder="Enter email" name="uname" required>
+                        
+                    <button type="submit" id="Login">Login</button>
+                    <label>
+                      <input type="checkbox"  id="Remember" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+                
+                  
+
+              </header> 
+              <script>
+                  if (typeof web3 !== 'undefined') {
+                           web3 = new Web3(web3.currentProvider);
+                       } else {
+                           web3 = new Web3(new Web3.providers.HttpProvider("HTTP://127.0.0.1:7545"));
+                       } 
+               
+                       web3
+                   if (typeof web3 !== 'undefined') {
+                           web3 = new Web3(web3.currentProvider);
+                       } else {
+                           web3 = new Web3(new Web3.providers.HttpProvider("HTTP://127.0.0.1:7545"));
+                       } b3.eth.defulAccount = web3.eth.contcact[0];
+                      var RemixContact = web3.eth.contract([
+                   
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_Name",
+				"type": "string"
+			},
+			{
+				"name": "_Password",
+				"type": "string"
+			},
+			{
+				"name": "_Emil",
+				"type": "string"
+			}
+		],
+		"name": "addUser",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
+               )
+                   var user = RemixContact.at('0xe4c0a3280aa6ae8d6f9eac418b4e9fec54ce2cbe');
+                   console.log('myMessage');
+                   $("#log").click(function(){
+                       user. addUser ($("#idname ").val , $("#idpassword").val , $("#idEmail").val , $("#idRemember").val);
+                   })
+                                    </script>  
+        </body>
+</html>,

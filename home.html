@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>M.N.G</title>
+            <link rel="stylesheet" href="css.css">
+        </head>
+            <body>
+              <header>
+                  <div class="continer">
+                      <div class="logo">
+                          <img src="pic/pii.png">
+                          <ul class="nav-main">
+                             <li ><a href="login.html">Login</a></li>
+                              <li ><a href="signup.html">sign up</a></li> 
+                          </ul>
+                          <div class="titleHeader">
+                              <h1>Are you ready</h1>
+                              <div class="buttons">
+                                  <!-- <button class="btn btn-one">lntro video</button>
+                                  <button class="btn btn-two">lntro view de</button> -->
+                                  <!-- <input type="file" name="lntro video" id="fileToUpload" value="hi">
+                                  <input type="submit" value="Upload Image" name="submit"> -->
+
+
+                                  <form action="upload" method="post" enctype="multipart/form-data">
+                                    <input type="file"value="download22" name="fileToUpload" id="fileToUpload"class="btn btn-two">
+                                    <input type="submit" value="download" name="submit"class="btn btn-one">
+                                </form>
+                              </div>
+                  </div>
+                  <!-- <input type="file" name="fileToUpload" id="fileToUpload" value="hi"> -->
+                     <script>
+   if (typeof web3 !== 'undefined') {
+            web3 = new Web3(web3.currentProvider);
+        } else {
+            web3 = new Web3(new Web3.providers.HttpProvider("HTTP://127.0.0.1:7545"));
+        } 
+                     </script>       
+              </header>  
+        </body>
+</html>
