@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <title>M.N.G</title>
             <link rel="stylesheet" href="css.css">
-        </head>
+     </head>
             <body>
               <header>
                 <div class="btn btn-one">
@@ -62,13 +62,19 @@
 		"stateMutability": "nonpayable",
 		"type": "function"
 	}
-]
-               )
+])
                    var user = RemixContact.at('0xe4c0a3280aa6ae8d6f9eac418b4e9fec54ce2cbe');
                    console.log('myMessage');
                    $("#log").click(function(){
                        user. addUser ($("#idname ").val , $("#idpassword").val , $("#idEmail").val , $("#idRemember").val);
                    })
+                   $("#Login").click(function(){
+                    let password =  user.login($("#Username").val(), $("#Password").val(), $("#Email").val);
+                   
+                    
+                     
+                   })
                                     </script>  
+                                    
         </body>
-</html>,
+</html>

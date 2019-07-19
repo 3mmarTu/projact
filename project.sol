@@ -15,12 +15,8 @@ contract create {
        map[_Name].push(user(_Name, _Password, _Emil));
     }
     
-    //  mapping (string => user[]) uploed ;
-    // function uploed(string memory _Uploedname,string memory _Uploedimge) public 
-    // {
-    
-    //   uploed[_Uploedname].push(user(_Uploedname ,_Uploedimge));
-    // }
+     mapping (string => user[]) uploed ;
+     
 }
 
 
